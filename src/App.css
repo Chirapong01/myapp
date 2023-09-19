@@ -1,5 +1,55 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9b9393; 
+}
+
 .App {
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'VAG Rounded Next Thin';
+  background-color: rgb(7, 1, 7);
+}
+.sidebar{
+   background-color: #000000 ; 
+   box-shadow: 0 0 10px  rgb(17, 1, 27);
+}
+
+
+
+.left-0 {
+  left: auto;
+}
+
+.bg-gray-900 {
+  background-color: rgba(250, 235, 215, 0);
+}
+
+.menu-1-active {
+  transform: translate(0, 12px) rotate(-45deg);
+}
+
+.menu-2-active {
+  opacity: 0;
+}
+
+.menu-3-active {
+  transform: translate(0, -12px) rotate(45deg);
 }
 
 .App-logo {
@@ -28,10 +78,22 @@
   color: #61dafb;
 }
 
+@font-face {
+  font-family: 'VAG Rounded Next Thin';
+  src: url(https://cdn.shopify.com/s/files/1/0550/2913/7495/files/Monotype_-_VAG_Rounded_Next_Thin_dab944f0-2580-4111-96df-229e539441e8.woff2?v=1692845437) format('woff2');
+}
+
+@font-face {
+  font-family: 'SnellRoundhand';
+  src: url(https://cdn.shopify.com/s/files/1/0550/2913/7495/files/SnellRoundhand-01.woff2?v=1692845575) format('woff2');
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

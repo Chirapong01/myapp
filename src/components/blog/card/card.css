@@ -1,0 +1,13 @@
+.card-pj {
+    width: 100%;
+    height: 100%;
+}
+
+.card-pj:hover {
+    width: 101%;
+    height: 101%;
+    box-shadow:
+        0 0 15px #220257,
+        0 0 17px #470566,
+        0 0 20px #fff;
+}
