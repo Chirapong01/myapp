@@ -1,10 +1,13 @@
-
 import { useRef } from 'react';
 import './App.css';
+import 'flowbite';
 import AboutMe from './components/aboutme/aboutme';
 import My_Skill from './components/my skill/my_skill';
 import My_Endu from './components/my endu/my_endu';
 import BlogPJ from './components/blog/blog';
+
+
+
 
 
 function App() {
@@ -14,16 +17,16 @@ function App() {
   const blogpj = useRef(null);
 
   function jumpTo(target) {
-    if (target == 'aboutme') {
+    if (target === 'aboutme') {
       aboutme.current?.scrollIntoView({ behavior: 'smooth' })
     }
-    if (target == 'edu') {
+    if (target === 'edu') {
       myedu.current?.scrollIntoView({ behavior: 'smooth' })
     }
-    if (target == 'sk') {
+    if (target === 'sk') {
       myskill.current?.scrollIntoView({ behavior: 'smooth' })
     }
-    if (target == 'bg') {
+    if (target === 'bg') {
       blogpj.current?.scrollIntoView({ behavior: 'smooth' })
     }
   }
@@ -31,9 +34,9 @@ function App() {
   return (
     <div className="App">
       <div>
-        <div className='fixed top-0 right-0'>
+        <div className='fixed top-0 right-0 mt-7 mr-8'>
           <button className="btn-icon text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2  " type="button" data-drawer-target="sidebar" data-drawer-show="sidebar" aria-controls="sidebar">
-            <ul id='menu' className='mt-7 mr-8'>
+            <ul id='menu' >
               <li className='menu-1 w-9 h-1 bg-white transition-all'>
               </li>
               <li className='menu-2 w-9 h-1 bg-white mt-2'>
@@ -55,6 +58,7 @@ function App() {
                 </li>
               </ul>
             </div>
+
           </button>
           <div className=" pt-20 overflow-y-auto">
             <ul className="space-y-2 font-medium">
